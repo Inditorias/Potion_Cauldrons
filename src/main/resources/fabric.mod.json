@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "modid",
+  "version": "${version}",
+
+  "name": "Potion Cauldrons",
+  "description": "Enhances cauldrons to allow for potion mixing and enhancing.",
+  "authors": [
+    "Inditorias"
+  ],
+  "contact": {
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/potion_cauldron/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.inditorias.potion_cauldron.PotionCauldron"
+    ]
+  },
+  "mixins": [
+    "potion_cauldron.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
